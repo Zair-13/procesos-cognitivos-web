@@ -1,0 +1,298 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilos para los iconos del header */
+.header-icono-izq, .header-icono-der {
+    height: 50px;
+    width: auto;
+}
+
+/* Sección Hero (la principal) */
+.hero {
+    background-image: url('img/index.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0;
+    min-height: 300px;
+    color: white;
+}
+
+/* Oculta los títulos que pusiste en el HTML, ya que el texto está en la imagen */
+.hero h1, .hero p {
+    display: none;
+}
+
+/* Sección de "Qué son?" */
+.acerca-de {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.acerca-de-texto {
+    max-width: 600px;
+    text-align: left;
+}
+
+.acerca-de-texto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.acerca-de-texto p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.acerca-de-imagen {
+    max-width: 400px;
+    text-align: center;
+}
+
+.imagen-libro {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 1.5rem;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Estilos para las tarjetas-enlace */
+.tarjeta-enlace {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta h3 {
+    color: #007bff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Estilos para la frase dinámica */
+.frase-dinamica {
+    font-style: italic;
+    font-weight: bold;
+    color: #FF7F50;
+    margin-top: auto;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.tarjeta:hover .frase-dinamica {
+    transform: scale(1.05);
+}
+
+#consejos ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#consejos li {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #007bff;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilos para las páginas de cada proceso cognitivo */
+.proceso-pagina {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-proceso {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.intro-proceso {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.definicion-atencion, .tipo-atencion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-definicion, .texto-tipo-izquierda, .texto-tipo-derecha {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.imagen-definicion, .imagen-tipo-derecha, .imagen-tipo-izquierda {
+    flex-shrink: 0;
+    width: 250px;
+    text-align: center;
+}
+
+.imagen-definicion img, .imagen-tipo-derecha img, .imagen-tipo-izquierda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo-proceso {
+    font-size: 2rem;
+    color: #0056b3;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-tipos {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.texto-tipo-izquierda h3, .texto-tipo-derecha h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos adicionales para Factores que Influyen */
+.factores-atencion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-factores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-factores li h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lista-factores li ul {
+    list-style: disc; /* Vuelve a poner viñetas para las sublistas */
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+.imagen-factores {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.imagen-factores img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
